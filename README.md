@@ -1,7 +1,5 @@
-﻿# Hệ Thống CRM Bán Hàng (CRM Sales System)
-
 ## Giới thiệu
-Đây là hệ thống sàn thương mại điện tử bán hàng mô hình EAV được xây dựng với mục tiêu quản lý sản phẩm, đơn hàng và khách hàng hiệu quả.
+Đây là hệ thống quản lý và kinh doanh đồng hồ chính hãng trực tiếp bằng mô hình EAV được xây dựng với mục tiêu quản lý sản phẩm, đơn hàng và khách hàng hiệu quả.
 
 ### Các công nghệ sử dụng
 
@@ -75,7 +73,7 @@ Sau khi chạy thành công, truy cập ứng dụng tại địa chỉ được
 
 Để test đầy đủ chức năng, khi đăng ký một tài khoản người dùng mới, để tạo tài khoản admin đầu tiên hãy vào bảng cơ sở dữ liệu để phân lại role admin cho tài khoản đó. Lần sau có thể dùng tài khoản admin đó để phân lại role cho tài khoản khác.
 
-## 5 hình ảnh demo
+### hình ảnh demo
 
  1. Dashboard tổng quan
 <img width="1919" height="944" alt="Dashboard tổng quan" src="https://github.com/user-attachments/assets/02441a44-b7d9-44c0-a651-06e356f83031" />
