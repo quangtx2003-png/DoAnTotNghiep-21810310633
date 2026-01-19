@@ -1,0 +1,143 @@
+########################################
+# Version Catalog - libs.versions.toml
+########################################
+
+[versions]
+# --- Core Frameworks ---
+spring-boot = "3.5.6"
+spring-dependency = "1.1.6"
+
+# --- ORM & Database ---
+jooq = "3.20.5"
+postgresql = "42.7.3"
+mysql = "8.0.33"
+hikari = "2.5.1"
+flyway = "11.3.4"
+jakarta-annotation = "2.1.1"
+# --- Object Storage ---
+minio = "8.5.11"
+
+# --- JWT / Security ---
+jjwt = "0.12.6"
+jwt = "4.4.0"
+jbcrypt = "0.4"
+
+# --- Utilities ---
+commons-lang3 = "3.17.0"
+commons-io = "2.14.0"
+reflections = "0.9.11"
+rxjava = "3.1.8"
+cron-utils = "9.2.0"
+slugify = "2.4"
+jakarta-validation = "3.1.0"
+
+# --- JSON & Serialization ---
+fastjson = "1.2.61"
+orgjson = "20160810"
+jsonpath = "2.8.0"
+gson = "2.10.1"
+jackson = "2.17.2"
+
+# --- Mapping & Codegen ---
+mapstruct = "1.6.2"
+lombok = "1.18.32"
+
+# --- Mail / HTML / Parsing ---
+javax-mail = "1.6.2"
+jsoup = "1.13.1"
+
+# --- Excel ---
+poi = "5.2.3"
+
+# --- Environment ---
+spring-dotenv = "5.0.1"
+dotenv = "4.0.0"
+
+# --- Plugin Versions ---
+versions-plugin = "0.45.0"
+spotless = "8.0.0"
+jooq-plugin = "10.1.1"
+
+########################################
+# Libraries
+########################################
+
+[libraries]
+# --- ORM & DB ---
+jooq = { module = "org.jooq:jooq", version.ref = "jooq" }
+jooq-meta = { module = "org.jooq:jooq-meta", version.ref = "jooq" }
+jooq-codegen = { module = "org.jooq:jooq-codegen", version.ref = "jooq" }
+hikari = { module = "com.zaxxer:HikariCP", version.ref = "hikari" }
+postgresql = { module = "org.postgresql:postgresql", version.ref = "postgresql" }
+mysql = { module = "mysql:mysql-connector-java", version.ref = "mysql" }
+flyway-core = { module = "org.flywaydb:flyway-core", version.ref = "flyway" }
+flyaway-postgres = { module = "org.flywaydb:flyway-database-postgresql", version.ref = "flyway" }
+jakarta-annotation = { module = "jakarta.annotation:jakarta.annotation-api", version.ref = "jakarta-annotation" }
+validation = { module = "org.springframework.boot:spring-boot-starter-validation" }
+# --- Object Storage ---
+minio = { module = "io.minio:minio", version.ref = "minio" }
+# --- JWT & Security ---
+jjwt = { module = "io.jsonwebtoken:jjwt", version.ref = "jjwt" }
+jjwt-api = { module = "io.jsonwebtoken:jjwt-api", version.ref = "jjwt" }
+jjwt-impl = { module = "io.jsonwebtoken:jjwt-impl", version.ref = "jjwt" }
+jjwt-jackson = { module = "io.jsonwebtoken:jjwt-jackson", version.ref = "jjwt" }
+auth0-jwt = { module = "com.auth0:java-jwt", version.ref = "jwt" }
+jbcrypt = { module = "org.mindrot:jbcrypt", version.ref = "jbcrypt" }
+
+# --- JSON & Serialization ---
+fastjson = { module = "com.alibaba:fastjson", version.ref = "fastjson" }
+orgjson = { module = "org.json:json", version.ref = "orgjson" }
+jsonpath = { module = "com.jayway.jsonpath:json-path", version.ref = "jsonpath" }
+gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
+jackson-core = { module = "com.fasterxml.jackson.core:jackson-core", version.ref = "jackson" }
+jackson-annotations = { module = "com.fasterxml.jackson.core:jackson-annotations", version.ref = "jackson" }
+jackson-databind = { module = "com.fasterxml.jackson.core:jackson-databind", version.ref = "jackson" }
+jackson-dataformat-xml = { module = "com.fasterxml.jackson.dataformat:jackson-dataformat-xml", version.ref = "jackson" }
+
+# --- Utilities ---
+commons-lang3 = { module = "org.apache.commons:commons-lang3", version.ref = "commons-lang3" }
+commons-io = { module = "commons-io:commons-io", version.ref = "commons-io" }
+reflections = { module = "org.reflections:reflections", version.ref = "reflections" }
+rxjava = { module = "io.reactivex.rxjava3:rxjava", version.ref = "rxjava" }
+cron-utils = { module = "com.cronutils:cron-utils", version.ref = "cron-utils" }
+slugify = { module = "com.github.slugify:slugify", version.ref = "slugify" }
+
+# --- Mail / HTML / Parsing ---
+javax-mail = { module = "com.sun.mail:javax.mail", version.ref = "javax-mail" }
+jsoup = { module = "org.jsoup:jsoup", version.ref = "jsoup" }
+
+# --- Excel ---
+poi = { module = "org.apache.poi:poi", version.ref = "poi" }
+poi-ooxml = { module = "org.apache.poi:poi-ooxml", version.ref = "poi" }
+
+# --- Code Generation & Mapping ---
+lombok = { module = "org.projectlombok:lombok", version.ref = "lombok" }
+mapstruct = { module = "org.mapstruct:mapstruct", version.ref = "mapstruct" }
+mapstruct-processor = { module = "org.mapstruct:mapstruct-processor", version.ref = "mapstruct" }
+
+# --- Environment ---
+spring-dotenv = { module = "me.paulschwarz:springboot3-dotenv", version.ref = "spring-dotenv" }
+
+boms-spring = { module = "org.springframework.boot:spring-boot-dependencies", version.ref = "spring-boot" }
+
+########################################
+# Bundles
+########################################
+
+[bundles]
+jjwt = ["jjwt", "jjwt-api", "jjwt-impl", "jjwt-jackson"]
+jooq = ["jooq", "jooq-codegen", "jooq-meta"]
+jackson = ["jackson-core", "jackson-annotations", "jackson-databind", "jackson-dataformat-xml"]
+
+########################################
+# Plugins
+########################################
+
+[plugins]
+versions = { id = "com.github.ben-manes.versions", version.ref = "versions-plugin" }
+spotless = { id = "com.diffplug.spotless", version.ref = "spotless" }
+spring-dependency = { id = "io.spring.dependency-management", version.ref = "spring-dependency" }
+spring-boot = { id = "org.springframework.boot", version.ref = "spring-boot" }
+jooq = { id = "nu.studer.jooq", version.ref = "jooq-plugin" }
+dotenv = { id = 'co.uzzu.dotenv.gradle', version.ref = "dotenv"}
+flyaway = { id = 'org.flywaydb.flyway', version = '10.20.0' }

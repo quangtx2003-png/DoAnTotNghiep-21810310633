@@ -1,0 +1,3 @@
+${AnsiStyle.BOLD}${AnsiColor.RED}ﮩ٨ـﮩﮩ٨ـ♡ﮩ٨ـﮩﮩ٨ـﮩ٨ـﮩﮩ٨ـ♡ﮩ٨ـﮩﮩ٨ـﮩ٨ـﮩﮩ٨ـ♡ﮩ٨ـﮩﮩ٨ـﮩ٨ـﮩﮩ٨ـ♡ﮩ٨ـﮩﮩ٨ـﮩ٨ـﮩﮩ٨ـ♡ﮩ٨ـﮩﮩ٨ـﮩ٨ـﮩﮩ٨ـ♡ﮩ٨ـﮩﮩ٨ـ${AnsiColor.DEFAULT}
+${AnsiStyle.BOLD}${AnsiColor.BRIGHT_GREEN}        ✧˖° ${AnsiColor.RED}E ${AnsiColor.BLUE}S ${AnsiColor.YELLOW}H ${AnsiColor.MAGENTA}O ${AnsiColor.GREEN}P${AnsiColor.DEFAULT} ✧˖° ${AnsiColor.BRIGHT_GREEN} Spring Boot Application ${AnsiColor.BRIGHT_YELLOW}(${spring-boot.version})${AnsiColor.DEFAULT} ${AnsiColor.BRIGHT_GREEN} Founded By: AEOC
+${AnsiStyle.BOLD}${AnsiColor.RED}ﮩ٨ـﮩﮩ٨ـ♡ﮩ٨ـﮩﮩ٨ـﮩ٨ـﮩﮩ٨ـ♡ﮩ٨ـﮩﮩ٨ـﮩ٨ـﮩﮩ٨ـ♡ﮩ٨ـﮩﮩ٨ـﮩ٨ـﮩﮩ٨ـ♡ﮩ٨ـﮩﮩ٨ـﮩ٨ـﮩﮩ٨ـ♡ﮩ٨ـﮩﮩ٨ـﮩ٨ـﮩﮩ٨ـ♡ﮩ٨ـﮩﮩ٨ـ${AnsiColor.DEFAULT}
